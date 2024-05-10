@@ -21,7 +21,7 @@
     </thead>
     <tbody>
     <tr th:each="board : ${boardList}">
-        <td th:text="${board.no}" align="center"></td>
+        <td th:text="${board.no}"></td>
         <td align="center" width="300">
             <a th:href="|/board/read?no=${board.no}|" th:text="${board.title}"></a>
         </td>
